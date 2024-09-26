@@ -16,9 +16,9 @@ public class SimpleTest {
 
         String id = given()
                 .body("{\n" +
-                        "  \"name\": \"Pinky Pie\",\n" +
-                        "  \"color\": \"pink\"\n" +
-                        "}")
+                      "  \"name\": \"Pinky Pie\",\n" +
+                      "  \"color\": \"pink\"\n" +
+                      "}")
                 .contentType(ContentType.JSON)
         .when()
                 .post("https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn")
