@@ -1,0 +1,15 @@
+POST https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn
+Content-Type: application/json
+
+{
+  "name": "Pinky Pie",
+  "color": "pink"
+}
+
+###
+GET https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn/66f55045fe837603e816d52c
+Accept: application/json
+
+###
+DELETE https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn/66f55045fe837603e816d52c
+Accept: application/json
