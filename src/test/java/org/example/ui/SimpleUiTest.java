@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ui;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selectors;
