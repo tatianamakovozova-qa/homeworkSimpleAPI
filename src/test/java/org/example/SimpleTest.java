@@ -29,6 +29,19 @@ public class SimpleTest {
         .extract()
                 .path("_id");
 
+        given()
+                .body("{\n" +
+                      "  \"name\": \"Pinky Pie\",\n" +
+                      "  \"color\": \"purple\"\n" +
+                      "}")
+                .contentType(ContentType.JSON)
+                .when()
+                .put("https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn/" + id)
+                .then()
+                .assertThat()
+                .statusCode(200);
+
+
 
         given().delete("https://crudcrud.com/api/857ed21a992c4387a41b686060c99574/unicorn/" + id)
                 .then()
